@@ -11,13 +11,10 @@
     brandTag: "Servicios Profesionales de Limpieza",
     navHome: "Inicio", navServices: "Servicios", navPortfolio: "Portafolio", navContact: "Contacto",
     ctaQuote: "Cotización gratis", ctaQuoteLong: "Solicitar cotización gratis", ctaWhatsapp: "Escríbenos por WhatsApp",
-    heroEyebrow: "Riverview, Florida · Residencial y Comercial",
-    heroTitle: "Espacios que se sienten nuevos <em>y huelen</em> <span class=\"grad-text\">a limpio.</span>",
+    heroEyebrow: "Riverview, Florida<span class=\"eb-extra\"> · Residencial y Comercial</span>",
+    heroTitle: "Espacios que se sienten nuevos y <em>huelen a limpio.</em>",
+    hbCall: "Llama o escribe", hbArea: "Zona de servicio", hbAreaV: "Riverview y alrededores", hbSched: "Horarios", hbSchedV: "Única vez o recurrente",
     heroSub: "Limpieza profesional para hogares y negocios, hecha con cuidado, detalle y un acabado que se ve — y se huele — desde que entras.",
-    heroPoint1: "Horarios flexibles", heroPoint2: "Equipo detallista", heroPoint3: "Hogares y oficinas",
-    chipA1: "Acabado fresco", chipA2: "Cada espacio, cada visita",
-    chipB1: "Reserva tu fecha", chipB2: "Semanal · Quincenal · Única vez",
-    chipC1: "Cuidado de confianza", chipC2: "Tratamos tu espacio como el nuestro",
     mq1: "Limpieza Estándar", mq2: "Limpieza Profunda", mq3: "Mudanzas", mq4: "Limpieza Comercial", mq5: "Limpieza de Airbnb", mq6: "Post-Construcción",
     aboutOwner: "Tu persona de contacto",
     aboutKicker: "Nosotros",
@@ -207,19 +204,6 @@
       panels.forEach(function (p) { p.classList.toggle("active", p.getAttribute("data-panel") === name); });
     });
   });
-
-  /* ---------------- Hero tilt (desktop pointer only) ---------------- */
-  var tilt = document.querySelector(".tilt");
-  if (tilt && window.matchMedia("(hover: hover) and (pointer: fine)").matches && !window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
-    var visual = tilt.parentElement;
-    visual.addEventListener("mousemove", function (e) {
-      var r = visual.getBoundingClientRect();
-      var x = (e.clientX - r.left) / r.width - 0.5;
-      var y = (e.clientY - r.top) / r.height - 0.5;
-      tilt.style.transform = "perspective(1200px) rotateY(" + (x * 6) + "deg) rotateX(" + (-y * 6) + "deg)";
-    });
-    visual.addEventListener("mouseleave", function () { tilt.style.transform = ""; });
-  }
 
   /* ---------------- Service links preselect form ---------------- */
   var serviceSelect = document.getElementById("serviceSelect");
