@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smellingclean.dgp-link.com/sitemap.xml

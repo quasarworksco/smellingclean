@@ -8,6 +8,13 @@ Static website for Smelling Clean (Riverview, FL): residential and commercial cl
 - `js/main.js` — EN/ES language toggle, mobile menu, scroll animations, portfolio filters, before/after slider, contact form
 - `assets/logo.svg` — temporary logo mark (replace with the official logo)
 
+## SEO & sharing
+- Live domain: https://smellingclean.dgp-link.com/ (`CNAME` file for GitHub Pages)
+- Open Graph + Twitter Card tags with `assets/og-image.png` (1200x630)
+- Schema.org `HouseCleaningService` JSON-LD (Google local results)
+- `robots.txt`, `sitemap.xml`, `site.webmanifest`, PNG icons in `assets/`
+- Google Maps: https://maps.app.goo.gl/ErihBjFjVXKzsQ3c9 (embedded map + links)
+
 ## Contact form
 No backend needed: the form composes the message and opens WhatsApp (+1 813 808 7772) or the email client (smellingcleanflorida@gmail.com).
 

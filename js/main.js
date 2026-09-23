@@ -72,6 +72,7 @@
     q5: "¿Cómo reservo?", a5: "Llámanos o escríbenos al (813) 808-7772, contáctanos por WhatsApp o usa el formulario de esta página.",
     ctKicker: "Contacto", ctTitle: "Hagamos que tu espacio <em>brille</em>",
     ctLead: "Cuéntanos qué necesitas y te responderemos con una cotización personalizada.",
+    mapOpen: "Abrir en Google Maps",
     cPhone: "Teléfono", cEmail: "Correo", cLocation: "Ubicación",
     formTitle: "Solicita tu cotización gratis", formSub: "Persona de contacto: Tatiana Fuentes",
     lName: "Nombre completo", lPhone: "Teléfono", lEmail: "Correo", lService: "Servicio", lMsg: "Cuéntanos sobre tu espacio",
