@@ -55,12 +55,13 @@
     p3t: "Elige la fecha", p3d: "Escoge el día y la frecuencia que mejor te funcionen.",
     p4t: "Disfruta la frescura", p4d: "Llega a un espacio impecable que de verdad huele a limpio.",
     pfKicker: "Portafolio", pfTitle: "Resultados que <em>hablan por sí solos</em>",
-    fAll: "Todos", fRes: "Residencial", fCom: "Comercial", fDeep: "Profunda",
-    g1t: "Cocina renovada", g1c: "Residencial", g2t: "Oficina", g2c: "Comercial", g3t: "Trabajo de detalle", g3c: "Profunda",
-    g4t: "Sala de estar", g4c: "Residencial", g5t: "Baño brillante", g5c: "Profunda", g6t: "Espacio de trabajo", g6c: "Comercial",
-    baKicker: "Antes y después", baTitle: "Mira la diferencia",
-    baText: "Desliza para comparar. Cada trabajo termina con una revisión final para asegurarnos de que no se escape nada.",
-    baIg: "Más en Instagram", before: "Antes", after: "Después",
+    pfLead: "Hogares reales, limpiados por nuestro equipo. Cada espacio terminado con cuidado, orden y ese aroma fresco a limpio.",
+    g1t: "Baño renovado", g1c: "Baños", g2t: "Sala y cocina abierta", g2c: "Áreas comunes", g3t: "Cuidado de alfombras", g3c: "Pisos",
+    g4t: "Habitación", g4c: "Habitaciones", g5t: "Sala y cocina", g5c: "Áreas comunes",
+    baKicker: "Los detalles", baTitle: "Se nota la diferencia",
+    baText: "Líneas de aspirado parejas, superficies pulidas y cada rincón cuidado. Cada trabajo termina con una revisión final para que no se escape nada.",
+    dt1: "Pisos aspirados y trapeados de borde a borde", dt2: "Superficies sin polvo y limpias", dt3: "Revisión final en cada visita",
+    shotTag: "Aspirado impecable", baIg: "Más en Instagram",
     arKicker: "Zona de servicio", arTitle: "Con orgullo servimos a <em>Riverview</em> y comunidades cercanas",
     arLead: "¿No sabes si llegamos a tu zona? Escríbenos y con gusto te confirmamos.",
     faqKicker: "Preguntas frecuentes", faqTitle: "¿Preguntas? <em>Tenemos respuestas.</em>",
@@ -206,30 +207,6 @@
       panels.forEach(function (p) { p.classList.toggle("active", p.getAttribute("data-panel") === name); });
     });
   });
-
-  /* ---------------- Portfolio filters ---------------- */
-  var filters = document.querySelectorAll(".filter");
-  var items = document.querySelectorAll(".g-item");
-  filters.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var f = btn.getAttribute("data-filter");
-      filters.forEach(function (b) { b.classList.toggle("active", b === btn); });
-      items.forEach(function (item) {
-        var show = f === "all" || item.getAttribute("data-cat") === f;
-        item.classList.toggle("hide", !show);
-        if (show) item.classList.add("in");
-      });
-    });
-  });
-
-  /* ---------------- Before / After ---------------- */
-  var ba = document.getElementById("ba");
-  var baRange = document.getElementById("baRange");
-  if (ba && baRange) {
-    var setPos = function () { ba.style.setProperty("--pos", baRange.value + "%"); };
-    baRange.addEventListener("input", setPos);
-    setPos();
-  }
 
   /* ---------------- Hero tilt (desktop pointer only) ---------------- */
   var tilt = document.querySelector(".tilt");
