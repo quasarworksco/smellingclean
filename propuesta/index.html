@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Propuesta · Sitio web Smelling Clean | DGP GROUP USA</title>
+  <meta name="description" content="Resumen del proyecto, estado de pago y opciones de hosting del sitio web de Smelling Clean Professional Cleaning Services.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#0b2a3c">
+  <meta property="og:title" content="Propuesta · Sitio web Smelling Clean">
+  <meta property="og:description" content="De Andrés Espina (DGP GROUP USA) para Tatiana Fuentes.">
+  <meta property="og:image" content="https://smellingclean.dgp-link.com/assets/og-image.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+  <link rel="apple-touch-icon" href="../assets/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --sky: #93e3fd; --ice: #cbf0ff; --mint: #3dffb1;
+      --ink: #0b2a3c; --ink-hover: #133f58; --text: #3d5566; --muted: #6d8494; --accent: #0e7490; --success: #0f9f6e;
+      --bg: #fff; --bg-soft: #f5fafc; --ice-soft: #eaf8fe; --line: #e3edf2; --line-strong: #d3e2ea;
+      --shadow-sm: 0 1px 2px rgba(11,42,60,.05), 0 2px 8px rgba(11,42,60,.04);
+      --shadow: 0 2px 4px rgba(11,42,60,.04), 0 12px 32px -12px rgba(11,42,60,.14);
+      --shadow-lg: 0 4px 8px rgba(11,42,60,.04), 0 24px 56px -20px rgba(11,42,60,.22);
+      --font-head: "Manrope", "Inter", system-ui, sans-serif;
+      --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      --gutter: clamp(16px, 4vw, 32px);
+      --ease: cubic-bezier(.22,1,.36,1);
+    }
+    *, *::before, *::after { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; overflow-x: hidden; scroll-behavior: smooth; }
+    body { margin: 0; font-family: var(--font-body); font-size: 16px; line-height: 1.65; color: var(--text); background: var(--bg-soft); -webkit-font-smoothing: antialiased; overflow-x: hidden; }
+    @supports (overflow: clip) { html, body { overflow-x: clip; } }
+    img { max-width: 100%; display: block; }
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; cursor: pointer; border: 0; background: none; color: inherit; }
+    h1, h2, h3, h4 { font-family: var(--font-head); color: var(--ink); margin: 0; line-height: 1.15; letter-spacing: -.02em; text-wrap: balance; }
+    p { margin: 0; }
+    ul { margin: 0; padding: 0; list-style: none; }
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-radius: 6px; }
+    .container { width: 100%; max-width: 1040px; margin-inline: auto; padding-inline: var(--gutter); }
+    .icon { width: 1.25em; height: 1.25em; flex-shrink: 0; fill: none; stroke: currentColor; stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+
+    /* Top bar */
+    .topbar { background: var(--ink); color: rgba(255,255,255,.8); }
+    .topbar .container { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; flex-wrap: wrap; padding-block: 12px; }
+    .agency { display: flex; align-items: center; gap: 12px; }
+    .agency-mark { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; background: var(--mint); color: var(--ink); font-family: var(--font-head); font-weight: 800; font-size: .95rem; letter-spacing: -.02em; }
+    .agency strong { display: block; color: #fff; font-family: var(--font-head); font-weight: 800; font-size: 1rem; line-height: 1.2; }
+    .agency small { display: block; font-size: .78rem; color: rgba(255,255,255,.62); }
+    .doc-meta { font-size: .84rem; text-align: right; }
+    .doc-meta strong { color: #fff; font-weight: 600; }
+
+    /* Hero */
+    .hero { position: relative; color: #fff; background: var(--ink); overflow: hidden; isolation: isolate; }
+    .hero-bg { position: absolute; inset: 0; z-index: -1; }
+    .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 45%; }
+    .hero-bg::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, rgba(8,30,43,.92) 0%, rgba(8,30,43,.72) 55%, rgba(8,30,43,.45) 100%); }
+    .hero .container { padding-block: clamp(48px, 8vw, 88px); display: grid; grid-template-columns: 1.3fr .7fr; gap: 32px; align-items: center; }
+    .kicker { display: inline-flex; align-items: center; gap: 10px; font-family: var(--font-head); font-size: .78rem; font-weight: 700; text-transform: uppercase; letter-spacing: .14em; color: var(--accent); margin-bottom: 12px; }
+    .kicker::before { content: ""; width: 20px; height: 2px; border-radius: 2px; background: var(--mint); }
+    .hero .kicker { color: var(--mint); }
+    .hero h1 { color: #fff; font-weight: 800; font-size: clamp(2rem, 5vw, 3.2rem); line-height: 1.08; letter-spacing: -.03em; }
+    .hero h1 em { font-style: normal; color: var(--sky); }
+    .hero p { margin-top: 16px; color: rgba(255,255,255,.84); font-size: clamp(1rem, 1.3vw, 1.1rem); max-width: 560px; }
+    .hero-client { justify-self: end; text-align: center; }
+    .hero-client img { width: min(220px, 60vw); height: auto; }
+    .hero-client span { display: block; margin-top: 6px; font-size: .8rem; color: rgba(255,255,255,.7); }
+    .to { display: flex; flex-wrap: wrap; gap: 10px 28px; margin-top: 28px; }
+    .to div small { display: block; font-size: .72rem; font-weight: 600; text-transform: uppercase; letter-spacing: .1em; color: rgba(255,255,255,.6); }
+    .to div strong { display: block; font-family: var(--font-head); font-size: 1rem; color: #fff; }
+
+    /* Sections */
+    main { padding-block: clamp(32px, 5vw, 56px) clamp(56px, 8vw, 88px); }
+    .card { background: #fff; border: 1px solid var(--line); border-radius: 20px; box-shadow: var(--shadow-sm); }
+    .block { margin-top: clamp(20px, 3vw, 28px); padding: clamp(22px, 4vw, 40px); }
+    .block:first-child { margin-top: 0; }
+    .block-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 24px; }
+    .block-head h2 { font-size: clamp(1.45rem, 2.8vw, 1.9rem); font-weight: 800; }
+    .block-head p { margin-top: 8px; max-width: 600px; }
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; padding: 12px 20px; border-radius: 10px; border: 1px solid transparent; font-family: var(--font-head); font-weight: 700; font-size: .95rem; white-space: nowrap; transition: background .25s, border-color .25s, transform .25s var(--ease); }
+    .btn .icon { width: 1.1em; height: 1.1em; }
+    .btn-primary { color: #fff; background: var(--ink); }
+    .btn-primary:hover { background: var(--ink-hover); transform: translateY(-1px); }
+    .btn-accent { color: var(--ink); background: var(--mint); }
+    .btn-accent:hover { background: #6effc6; transform: translateY(-1px); }
+    .btn-ghost { color: var(--ink); background: #fff; border-color: var(--line-strong); }
+    .btn-ghost:hover { border-color: var(--ink); }
+    .btn-lg { padding: 15px 24px; font-size: 1rem; }
+
+    /* Summary */
+    .summary { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(24px, 4vw, 40px); align-items: center; }
+    .browser { border-radius: 14px; overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow-lg); background: #fff; }
+    .browser-bar { display: flex; align-items: center; gap: 8px; padding: 10px 12px; background: var(--bg-soft); border-bottom: 1px solid var(--line); }
+    .browser-bar i { width: 10px; height: 10px; border-radius: 50%; background: var(--line-strong); }
+    .browser-bar span { margin-left: 8px; flex: 1; min-width: 0; padding: 4px 10px; border-radius: 6px; background: #fff; border: 1px solid var(--line); font-size: .78rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .browser { display: block; }
+    .browser img { width: 100%; height: auto; aspect-ratio: 1200 / 630; object-fit: cover; }
+    .facts { display: grid; gap: 12px; }
+    .fact { display: flex; align-items: center; gap: 14px; padding: 14px 16px; border-radius: 14px; background: var(--bg-soft); border: 1px solid var(--line); min-width: 0; }
+    .fact-icon { width: 42px; height: 42px; border-radius: 10px; display: grid; place-items: center; flex-shrink: 0; color: var(--ink); background: var(--ice); }
+    .fact small { display: block; font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+    .fact strong { display: block; font-family: var(--font-head); font-size: 1rem; color: var(--ink); overflow-wrap: anywhere; }
+    .status { display: inline-flex; align-items: center; gap: 6px; padding: 3px 10px; border-radius: 999px; font-size: .78rem; font-weight: 700; color: #047857; background: rgba(61,255,177,.25); }
+    .status::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: var(--success); }
+
+    /* Included */
+    .features { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .feature { padding: 20px; border-radius: 14px; border: 1px solid var(--line); background: #fff; }
+    .feature-icon { width: 40px; height: 40px; border-radius: 10px; display: grid; place-items: center; color: var(--accent); background: var(--ice-soft); margin-bottom: 12px; }
+    .feature h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; letter-spacing: -.01em; }
+    .feature p { font-size: .9rem; line-height: 1.55; }
+    .sections-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .sections-list span { padding: 7px 12px; border-radius: 8px; background: var(--bg-soft); border: 1px solid var(--line); font-family: var(--font-head); font-size: .86rem; font-weight: 600; color: var(--ink); }
+
+    /* Payment */
+    .pay { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+    .pay-item { padding: 20px; border-radius: 14px; border: 1px solid var(--line); background: var(--bg-soft); }
+    .pay-item small { display: block; font-size: .74rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); }
+    .pay-item strong { display: block; margin-top: 4px; font-family: var(--font-head); font-size: clamp(1.6rem, 3.4vw, 2.1rem); font-weight: 800; color: var(--ink); letter-spacing: -.02em; }
+    .pay-item.paid strong { color: var(--success); }
+    .pay-item.due { background: var(--ink); border-color: var(--ink); }
+    .pay-item.due small { color: rgba(255,255,255,.65); }
+    .pay-item.due strong { color: var(--mint); }
+    .progress { margin-top: 20px; }
+    .progress-track { height: 10px; border-radius: 999px; background: var(--line); overflow: hidden; }
+    .progress-fill { height: 100%; width: 0; border-radius: inherit; background: var(--success); transition: width 1.2s var(--ease); }
+    .progress-labels { display: flex; justify-content: space-between; gap: 12px; margin-top: 8px; font-size: .86rem; }
+    .progress-labels strong { color: var(--ink); }
+
+    /* Plans */
+    .plans { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; align-items: stretch; }
+    .plan { position: relative; display: flex; flex-direction: column; padding: 28px; border-radius: 18px; border: 2px solid var(--line); background: #fff; cursor: pointer; transition: border-color .25s, box-shadow .25s, transform .25s var(--ease); }
+    .plan:hover { border-color: var(--line-strong); box-shadow: var(--shadow); }
+    .plan input { position: absolute; opacity: 0; pointer-events: none; }
+    .plan.selected { border-color: var(--ink); box-shadow: var(--shadow-lg); }
+    .plan.recommended { border-color: var(--sky); }
+    .plan.recommended.selected { border-color: var(--ink); }
+    .badge { position: absolute; top: -13px; left: 24px; padding: 4px 12px; border-radius: 999px; font-family: var(--font-head); font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--ink); background: var(--mint); }
+    .plan-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 12px; }
+    .plan h3 { font-size: 1.2rem; font-weight: 800; }
+    .plan-sub { font-size: .9rem; color: var(--muted); margin-top: 2px; }
+    .radio { width: 24px; height: 24px; border-radius: 50%; border: 2px solid var(--line-strong); display: grid; place-items: center; flex-shrink: 0; transition: border-color .2s; }
+    .radio::after { content: ""; width: 12px; height: 12px; border-radius: 50%; background: var(--ink); transform: scale(0); transition: transform .2s var(--ease); }
+    .plan.selected .radio { border-color: var(--ink); }
+    .plan.selected .radio::after { transform: scale(1); }
+    .price { display: flex; align-items: baseline; gap: 6px; margin: 18px 0 4px; }
+    .price strong { font-family: var(--font-head); font-size: 2.6rem; font-weight: 800; color: var(--ink); letter-spacing: -.03em; line-height: 1; }
+    .price span { font-size: .95rem; color: var(--muted); font-weight: 500; }
+    .price-note { font-size: .88rem; color: var(--muted); min-height: 1.4em; }
+    .save { display: inline-flex; align-items: center; gap: 6px; margin-top: 6px; padding: 4px 10px; border-radius: 8px; font-size: .82rem; font-weight: 700; color: #047857; background: rgba(61,255,177,.25); }
+    .plan ul { display: grid; gap: 10px; margin: 20px 0; padding-top: 20px; border-top: 1px solid var(--line); }
+    .plan li { display: flex; align-items: flex-start; gap: 10px; font-size: .94rem; color: var(--ink); font-weight: 500; }
+    .plan li .icon { width: 16px; height: 16px; margin-top: 3px; padding: 3px; border-radius: 50%; background: rgba(61,255,177,.25); color: var(--success); stroke-width: 3; box-sizing: content-box; }
+    .plan li.star .icon { background: var(--ink); color: var(--mint); }
+    .plan li.star { font-weight: 700; }
+    .plan-total { margin-top: auto; padding: 14px 16px; border-radius: 12px; background: var(--bg-soft); border: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 12px; font-size: .9rem; }
+    .plan-total strong { font-family: var(--font-head); font-size: 1.15rem; color: var(--ink); white-space: nowrap; }
+    .plan.selected .plan-total { background: var(--ice-soft); border-color: var(--ice); }
+
+    .confirm { margin-top: 24px; display: flex; align-items: center; justify-content: space-between; gap: 16px 24px; flex-wrap: wrap; padding: 20px 24px; border-radius: 16px; background: var(--ink); color: rgba(255,255,255,.82); }
+    .confirm p { font-size: .95rem; max-width: 520px; }
+    .confirm p strong { color: #fff; }
+    .confirm-actions { display: flex; gap: 10px; flex-wrap: wrap; }
+    .confirm .btn-ghost { background: transparent; color: #fff; border-color: rgba(255,255,255,.35); }
+    .confirm .btn-ghost:hover { border-color: #fff; }
+
+    /* Steps */
+    .steps { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; counter-reset: s; }
+    .step { padding: 20px; border-radius: 14px; background: var(--bg-soft); border: 1px solid var(--line); }
+    .step::before { counter-increment: s; content: "0" counter(s); display: block; font-family: var(--font-head); font-size: .8rem; font-weight: 800; letter-spacing: .08em; color: var(--accent); margin-bottom: 8px; }
+    .step h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .step p { font-size: .9rem; }
+
+    /* Signature */
+    .sign { display: flex; align-items: center; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    .sign-person { display: flex; align-items: center; gap: 14px; }
+    .avatar { width: 52px; height: 52px; border-radius: 50%; display: grid; place-items: center; background: var(--ink); color: var(--mint); font-family: var(--font-head); font-weight: 800; font-size: 1.05rem; }
+    .sign-person strong { display: block; font-family: var(--font-head); font-size: 1.05rem; color: var(--ink); }
+    .sign-person small { display: block; font-size: .88rem; color: var(--muted); }
+
+    footer { padding: 28px 0 40px; text-align: center; font-size: .84rem; color: var(--muted); }
+    footer a { color: var(--accent); font-weight: 600; }
+
+    .reveal { opacity: 0; transform: translateY(16px); transition: opacity .7s var(--ease), transform .7s var(--ease); }
+    .reveal.in { opacity: 1; transform: none; }
+
+    @media (max-width: 860px) {
+      .hero .container, .summary { grid-template-columns: minmax(0, 1fr); }
+      .hero-client { justify-self: start; order: -1; text-align: left; }
+      .hero-client img { width: 160px; }
+      .hero-client span { display: none; }
+      .features, .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 640px) {
+      body { font-size: 15.5px; }
+      .doc-meta { text-align: left; }
+      .features, .steps, .pay, .plans { grid-template-columns: minmax(0, 1fr); }
+      .plans { gap: 26px; }
+      .plan.recommended { order: -1; }
+      .plan { padding: 24px 20px; }
+      .confirm { padding: 20px; }
+      .confirm-actions, .confirm-actions .btn { width: 100%; }
+      .sign .btn { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+    }
+    @media print {
+      body { background: #fff; }
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .confirm-actions, .no-print { display: none !important; }
+      .card, .plan { box-shadow: none !important; break-inside: avoid; }
+      .hero, .topbar, .pay-item.due, .confirm, .avatar, .agency-mark { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+    }
+  </style>
+</head>
+<body>
+
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
+  <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></symbol>
+  <symbol id="i-lock" viewBox="0 0 24 24"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M11 18h2"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></symbol>
+  <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></symbol>
+  <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M3.5 20.5 5 16a8.5 8.5 0 1 1 3.2 3.1L3.5 20.5Z"/><path d="M9 8.5c0 3.5 2.8 6.5 6.5 6.5l1-1.4-2-1.1-1 .9c-1.2-.5-2.4-1.7-2.9-2.9l.9-1-1.1-2L9 8.5Z"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><rect x="2.5" y="4.5" width="19" height="15" rx="2.5"/><path d="m3 7 9 6 9-6"/></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
+  <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="9" cy="9" r="2"/><path d="m21 15-4.5-4.5L6 21"/></symbol>
+  <symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z"/></symbol>
+  <symbol id="i-layout" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2.5"/><path d="M3 9h18M9 21V9"/></symbol>
+  <symbol id="i-server" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="7" rx="2"/><rect x="3" y="14" width="18" height="7" rx="2"/><path d="M7 6.5h.01M7 17.5h.01"/></symbol>
+  <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10Z"/><path d="m9 12 2 2 4-4"/></symbol>
+  <symbol id="i-link" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.5.5l3-3a5 5 0 0 0-7-7l-1.7 1.7"/><path d="M14 11a5 5 0 0 0-7.5-.5l-3 3a5 5 0 0 0 7 7l1.7-1.7"/></symbol>
+  <symbol id="i-wallet" viewBox="0 0 24 24"><path d="M20 7V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h13a2 2 0 0 0 2-2v-2"/><path d="M21 8h-5a4 4 0 0 0 0 8h5V8Z"/><path d="M16 12h.01"/></symbol>
+  <symbol id="i-printer" viewBox="0 0 24 24"><path d="M6 9V2h12v7"/><rect x="3" y="9" width="18" height="8" rx="2"/><path d="M6 14h12v8H6z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+</svg>
+
+<div class="topbar">
+  <div class="container">
+    <div class="agency">
+      <span class="agency-mark" aria-hidden="true">DGP</span>
+      <div><strong>DGP GROUP USA</strong><small>Diseño y desarrollo web</small></div>
+    </div>
+    <div class="doc-meta">Propuesta y estado del proyecto · <strong id="docDate">24 de septiembre de 2026</strong></div>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="hero-bg" aria-hidden="true">
+    <picture>
+      <source srcset="../assets/portfolio/living-kitchen-gray.webp" type="image/webp">
+      <img src="../assets/portfolio/living-kitchen-gray.jpg" alt="" width="1320" height="917">
+    </picture>
+  </div>
+  <div class="container">
+    <div>
+      <span class="kicker">Propuesta de proyecto</span>
+      <h1>Tu sitio web está <em>listo y publicado.</em></h1>
+      <p>Tatiana, aquí tienes el resumen de todo lo que incluye el sitio de Smelling Clean, el estado de tu pago y las opciones de hosting para mantenerlo siempre en línea.</p>
+      <div class="to">
+        <div><small>Para</small><strong>Tatiana Fuentes · Smelling Clean</strong></div>
+        <div><small>De</small><strong>Andrés Espina · DGP GROUP USA</strong></div>
+      </div>
+    </div>
+    <div class="hero-client">
+      <img src="../assets/logo-white.png" alt="Smelling Clean Cleaning Services" width="640" height="580">
+      <span>Cliente</span>
+    </div>
+  </div>
+</header>
+
+<main class="container">
+
+  <!-- Summary -->
+  <section class="card block reveal">
+    <div class="summary">
+      <a href="https://smellingclean.dgp-link.com/" target="_blank" rel="noopener" class="browser" aria-label="Abrir el sitio de Smelling Clean">
+        <div class="browser-bar"><i></i><i></i><i></i><span>smellingclean.dgp-link.com</span></div>
+        <img src="../assets/og-image.png" alt="Vista previa del sitio de Smelling Clean" width="1200" height="630">
+      </a>
+      <div>
+        <span class="kicker">Resumen</span>
+        <h2 style="font-size:clamp(1.45rem,2.8vw,1.9rem);font-weight:800">Sitio web profesional de Smelling Clean</h2>
+        <div class="facts" style="margin-top:20px">
+          <div class="fact"><span class="fact-icon"><svg class="icon"><use href="#i-link"/></svg></span><span><small>Dirección</small><strong>smellingclean.dgp-link.com</strong></span></div>
+          <div class="fact"><span class="fact-icon"><svg class="icon"><use href="#i-layout"/></svg></span><span><small>Estado</small><strong><span class="status">Publicado</span></strong></span></div>
+          <div class="fact"><span class="fact-icon"><svg class="icon"><use href="#i-globe"/></svg></span><span><small>Idiomas</small><strong>Inglés y español</strong></span></div>
+        </div>
+        <a href="https://smellingclean.dgp-link.com/" target="_blank" rel="noopener" class="btn btn-primary" style="margin-top:20px">Ver el sitio<svg class="icon"><use href="#i-arrow"/></svg></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Included -->
+  <section class="card block reveal">
+    <div class="block-head">
+      <div>
+        <span class="kicker">Qué incluye</span>
+        <h2>Todo lo que tiene tu sitio</h2>
+        <p>Diseñado a la medida con los colores y el logo de Smelling Clean, pensado para que tus clientes te conozcan y te contacten fácilmente.</p>
+      </div>
+    </div>
+    <div class="features">
+      <div class="feature"><span class="feature-icon"><svg class="icon"><use href="#i-layout"/></svg></span><h3>Diseño a la medida</h3><p>Estilo elegante y profesional con tu logo, tus colores y fotos reales de tus trabajos.</p></div>
+      <div class="feature"><span class="feature-icon"><svg class="icon"><use href="#i-phone"/></svg></span><h3>100% adaptable</h3><p>Se ve perfecto en celulares, tabletas y computadoras.</p></div>
+      <div class="feature"><span class="feature-icon"><svg class="icon"><use href="#i-globe"/></svg></span><h3>Bilingüe</h3><p>Botón para cambiar entre inglés y español en todo el sitio.</p></div>
+      <div class="feature"><span class="feature-icon"><svg class="icon"><use href="#i-whatsapp"/></svg></span><h3>Contacto directo</h3><p>Formulario de cotización que llega por WhatsApp o correo, botón flotante de WhatsApp y llamada con un toque.</p></div>
+      <div class="feature"><span class="feature-icon"><svg class="icon"><use href="#i-pin"/></svg></span><h3>Mapa y zona de servicio</h3><p>Mapa de Google, enlace a tu ubicación y las ciudades que atiendes.</p></div>
+      <div class="feature"><span class="feature-icon"><svg class="icon"><use href="#i-image"/></svg></span><h3>Portafolio</h3><p>Galería con fotos reales de tus trabajos, optimizadas para cargar rápido.</p></div>
+      <div class="feature"><span class="feature-icon"><svg class="icon"><use href="#i-search"/></svg></span><h3>Listo para Google</h3><p>Datos de negocio local, sitemap y etiquetas para aparecer en búsquedas como "cleaning Riverview".</p></div>
+      <div class="feature"><span class="feature-icon"><svg class="icon"><use href="#i-share"/></svg></span><h3>Vista previa al compartir</h3><p>Al enviar el enlace por WhatsApp, Facebook o Instagram se ve una tarjeta con tu logo y foto.</p></div>
+      <div class="feature"><span class="feature-icon"><svg class="icon"><use href="#i-bolt"/></svg></span><h3>Rápido y seguro</h3><p>Imágenes optimizadas, sin errores y con conexión segura (https).</p></div>
+    </div>
+    <div class="sections-list" aria-label="Secciones del sitio">
+      <span>Inicio</span><span>Nosotros</span><span>Servicios (6)</span><span>Lista por espacio</span><span>Cómo funciona</span><span>Portafolio</span><span>Zona de servicio</span><span>Preguntas frecuentes</span><span>Contacto</span>
+    </div>
+  </section>
+
+  <!-- Payment -->
+  <section class="card block reveal">
+    <div class="block-head">
+      <div>
+        <span class="kicker">Estado de pago</span>
+        <h2>Pago del sitio web</h2>
+        <p>Gracias por tu primer pago. Este es el estado actual del costo del sitio.</p>
+      </div>
+    </div>
+    <div class="pay">
+      <div class="pay-item"><small>Costo del sitio</small><strong>$185</strong></div>
+      <div class="pay-item paid"><small>Pagado</small><strong>$95</strong></div>
+      <div class="pay-item due"><small>Saldo pendiente</small><strong>$90</strong></div>
+    </div>
+    <div class="progress">
+      <div class="progress-track" role="progressbar" aria-valuemin="0" aria-valuemax="185" aria-valuenow="95" aria-label="Pagado $95 de $185"><div class="progress-fill" data-width="51.35"></div></div>
+      <div class="progress-labels"><span><strong>51%</strong> pagado</span><span>$95 de $185</span></div>
+    </div>
+  </section>
+
+  <!-- Hosting -->
+  <section class="card block reveal" id="hosting">
+    <div class="block-head">
+      <div>
+        <span class="kicker">Hosting · Elige tu opción</span>
+        <h2>¿Qué opción de hosting prefieres?</h2>
+        <p>El hosting mantiene tu sitio en línea las 24 horas. Aparte del costo del sitio, elige la opción que mejor te funcione.</p>
+      </div>
+    </div>
+
+    <div class="plans" role="radiogroup" aria-label="Opciones de hosting">
+      <label class="plan" data-plan="mensual">
+        <input type="radio" name="plan" value="mensual">
+        <div class="plan-top">
+          <div><h3>Plan Mensual</h3><p class="plan-sub">Paga mes a mes</p></div>
+          <span class="radio" aria-hidden="true"></span>
+        </div>
+        <div class="price"><strong>$22</strong><span>/ mes</span></div>
+        <p class="price-note">$264 al año</p>
+        <ul>
+          <li><svg class="icon"><use href="#i-check"/></svg>Hosting del sitio</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Garantía del sitio</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Certificado SSL (conexión segura https)</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Mantenimiento cuando se necesite</li>
+        </ul>
+        <div class="plan-total"><span>Para dejar todo al día hoy<br><small style="color:var(--muted)">Saldo $90 + primer mes $22</small></span><strong>$112</strong></div>
+      </label>
+
+      <label class="plan recommended selected" data-plan="anual">
+        <span class="badge">Recomendado</span>
+        <input type="radio" name="plan" value="anual" checked>
+        <div class="plan-top">
+          <div><h3>Plan Anual</h3><p class="plan-sub">Un solo pago por todo el año</p></div>
+          <span class="radio" aria-hidden="true"></span>
+        </div>
+        <div class="price"><strong>$145</strong><span>/ año</span></div>
+        <p class="price-note">Equivale a ~$12 al mes</p>
+        <span class="save">Ahorras $119 al año frente al plan mensual</span>
+        <ul>
+          <li><svg class="icon"><use href="#i-check"/></svg>Hosting del sitio</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Garantía del sitio</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Certificado SSL (conexión segura https)</li>
+          <li><svg class="icon"><use href="#i-check"/></svg>Mantenimiento cuando se necesite</li>
+          <li class="star"><svg class="icon"><use href="#i-shield"/></svg>Garantía de que tu sitio nunca se cae por falta de pago</li>
+        </ul>
+        <div class="plan-total"><span>Para dejar todo al día hoy<br><small style="color:var(--muted)">Saldo $90 + año completo $145</small></span><strong>$235</strong></div>
+      </label>
+    </div>
+
+    <div class="confirm">
+      <p id="confirmText">Opción seleccionada: <strong>Plan Anual · $145 / año</strong>. Confírmala y te enviaremos los detalles de pago.</p>
+      <div class="confirm-actions">
+        <a href="#" class="btn btn-accent btn-lg" id="confirmWa"><svg class="icon"><use href="#i-whatsapp"/></svg>Confirmar por WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next steps -->
+  <section class="card block reveal">
+    <div class="block-head">
+      <div>
+        <span class="kicker">Próximos pasos</span>
+        <h2>Qué sigue</h2>
+      </div>
+    </div>
+    <div class="steps">
+      <div class="step"><h3>Elige tu hosting</h3><p>Selecciona Mensual o Anual arriba y confírmalo por WhatsApp.</p></div>
+      <div class="step"><h3>Completa el pago</h3><p>Saldo del sitio ($90) más la opción de hosting que elijas.</p></div>
+      <div class="step"><h3>Sitio siempre activo</h3><p>Nos encargamos del hosting, el SSL y el mantenimiento para que solo te ocupes de tus clientes.</p></div>
+    </div>
+  </section>
+
+  <!-- Signature -->
+  <section class="card block reveal">
+    <div class="sign">
+      <div class="sign-person">
+        <span class="avatar" aria-hidden="true">AE</span>
+        <div><strong>Andrés Espina</strong><small>DGP GROUP USA · Diseño y desarrollo web</small></div>
+      </div>
+      <button type="button" class="btn btn-ghost no-print" onclick="window.print()"><svg class="icon"><use href="#i-printer"/></svg>Guardar como PDF</button>
+    </div>
+    <p style="margin-top:18px">Gracias por confiar en nosotros, Tatiana. Fue un gusto crear el sitio de Smelling Clean. Cualquier duda, estoy a tu orden.</p>
+  </section>
+
+</main>
+
+<footer>
+  © <span id="year">2026</span> DGP GROUP USA · Propuesta preparada para Smelling Clean Professional Cleaning Services · <a href="https://smellingclean.dgp-link.com/">smellingclean.dgp-link.com</a>
+</footer>
+
+<script>
+(function () {
+  "use strict";
+  /* Número de WhatsApp de Andrés (solo dígitos, con código de país, ej. "18135550000").
+     Si queda vacío, WhatsApp pedirá elegir el contacto al enviar. */
+  var ANDRES_WHATSAPP = "";
+
+  var plans = document.querySelectorAll(".plan");
+  var confirmText = document.getElementById("confirmText");
+  var confirmWa = document.getElementById("confirmWa");
+  var labels = {
+    mensual: { name: "Plan Mensual", price: "$22 / mes", today: "$112" },
+    anual: { name: "Plan Anual", price: "$145 / año", today: "$235" }
+  };
+
+  function current() {
+    var el = document.querySelector('.plan input:checked');
+    return el ? el.value : "anual";
+  }
+  function render() {
+    var sel = current();
+    plans.forEach(function (p) { p.classList.toggle("selected", p.getAttribute("data-plan") === sel); });
+    var l = labels[sel];
+    confirmText.innerHTML = "Opción seleccionada: <strong>" + l.name + " · " + l.price + "</strong>. Total para dejar todo al día: <strong>" + l.today + "</strong>.";
+    var msg = "Hola Andrés, soy Tatiana Fuentes de Smelling Clean. Revisé la propuesta del sitio web y elijo el " + l.name + " (" + l.price + ") para el hosting. " +
+      "Entiendo que el total para dejar todo al día es " + l.today + " (saldo del sitio $90 + hosting). ¿Me envías los detalles de pago?";
+    confirmWa.href = "https://wa.me/" + ANDRES_WHATSAPP + "?text=" + encodeURIComponent(msg);
+    confirmWa.target = "_blank";
+    confirmWa.rel = "noopener";
+  }
+  plans.forEach(function (p) { p.querySelector("input").addEventListener("change", render); });
+  render();
+
+  var y = document.getElementById("year");
+  if (y) y.textContent = new Date().getFullYear();
+
+  var fill = document.querySelector(".progress-fill");
+  var reveals = document.querySelectorAll(".reveal");
+  function show(el) {
+    el.classList.add("in");
+    if (fill && el.contains(fill)) fill.style.width = fill.getAttribute("data-width") + "%";
+  }
+  if ("IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { if (e.isIntersecting) { show(e.target); io.unobserve(e.target); } });
+    }, { threshold: 0.1 });
+    reveals.forEach(function (el) { io.observe(el); });
+  } else {
+    reveals.forEach(show);
+  }
+  window.addEventListener("beforeprint", function () { reveals.forEach(show); });
+})();
+</script>
+</body>
+</html>
