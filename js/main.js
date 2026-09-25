@@ -65,7 +65,7 @@
     faqLead: "Si no encuentras lo que buscas, contáctanos. Con gusto te ayudamos.", faqCall: "Llámanos",
     q1: "¿Necesito estar en casa durante la limpieza?", a1: "No necesariamente. Muchos clientes nos dan instrucciones de acceso. Coordinamos los detalles contigo con anticipación.",
     q2: "¿Llevan sus propios productos?", a2: "Sí, llegamos con nuestros productos y equipo de limpieza. Si prefieres productos específicos, solo avísanos.",
-    q3: "¿Cómo se calcula el precio?", a3: "Depende del tamaño del espacio, el tipo de servicio y la frecuencia. Contáctanos y visitaremos tu espacio para darte una cotización personalizada.",
+    q3: "¿Cómo se calcula el precio?", a3: "Depende del tamaño del espacio, el tipo de servicio y la frecuencia. Contáctanos y visitaremos tu espacio para darte una cotización personalizada. Somos pet friendly, así que solo avísanos si tienes mascotas en casa.",
     q4: "¿Limpian oficinas y negocios?", a4: "Sí. Ofrecemos limpieza comercial y podemos trabajar según el horario de tu negocio.",
     q5: "¿Cómo reservo?", a5: "Llámanos o escríbenos al (813) 808-7772, contáctanos por WhatsApp o usa el formulario de esta página.",
     ctKicker: "Contacto", ctTitle: "Hagamos que tu espacio <em>brille</em>",
