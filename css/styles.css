@@ -228,6 +228,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .marquee-track { display: flex; align-items: center; gap: 28px; width: max-content; animation: marquee 40s linear infinite; }
 .marquee-track span { font-family: var(--font-head); font-size: clamp(0.95rem, 1.5vw, 1.1rem); font-weight: 600; letter-spacing: 0.02em; white-space: nowrap; color: rgba(255, 255, 255, 0.88); }
 .marquee-track .icon { color: var(--mint); width: 16px; height: 16px; }
+.marquee-track .icon.star { color: #fde068; fill: currentColor; stroke: none; width: 18px; height: 18px; filter: drop-shadow(0 0 6px rgba(253, 224, 104, 0.45)); }
 @keyframes marquee { to { transform: translateX(-50%); } }
 
 /* ---------- About ---------- */
