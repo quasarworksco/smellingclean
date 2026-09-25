@@ -58,7 +58,7 @@
     baText: "Líneas de aspirado parejas, superficies pulidas y cada rincón cuidado. Cada trabajo termina con una revisión final para que no se escape nada.",
     dt1: "Pisos aspirados y trapeados de borde a borde", dt2: "Superficies sin polvo y limpias", dt3: "Revisión final en cada visita",
     shotTag: "Aspirado impecable", baIg: "Más en Instagram",
-    arKicker: "Zona de servicio", arTitle: "Con orgullo servimos al <em>Área de Tampa</em> y comunidades cercanas",
+    arKicker: "Zona de servicio", arTitle: "Con orgullo servimos al <em>Área de Tampa</em>",
     pillTampa: "Área de Tampa", cLocationV: "Área de Tampa, Florida", footLoc: "Área de Tampa, FL",
     arLead: "¿No sabes si llegamos a tu zona? Escríbenos y con gusto te confirmamos.",
     faqKicker: "Preguntas frecuentes", faqTitle: "¿Preguntas? <em>Tenemos respuestas.</em>",
