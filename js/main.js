@@ -10,7 +10,7 @@
     brandTag: "Servicios Profesionales de Limpieza",
     navHome: "Inicio", navServices: "Servicios", navPortfolio: "Portafolio", navContact: "Contacto",
     ctaQuote: "Cotización gratis", ctaQuoteLong: "Solicitar cotización gratis", ctaWhatsapp: "Escríbenos por WhatsApp",
-    heroEyebrow: "Área de Tampa, Florida<span class=\"eb-extra\"> · Residencial y Comercial</span>",
+    heroEyebrow: "Servicios de Limpieza Residencial y Comercial",
     heroTitle: "Espacios que se sienten nuevos y <em>huelen a limpio.</em>",
     hbCall: "Llama o escribe", hbArea: "Zona de servicio", hbAreaV: "Área de Tampa, FL", hbSched: "Horarios", hbSchedV: "Única vez o recurrente",
     heroSub: "Limpieza profesional para hogares y negocios, hecha con cuidado, detalle y un acabado que se ve — y se huele — desde que entras.",
