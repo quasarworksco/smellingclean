@@ -53,7 +53,7 @@
     pfKicker: "Portafolio", pfTitle: "Resultados que <em>hablan por sí solos</em>",
     pfLead: "Hogares reales, limpiados por nuestro equipo. Cada espacio terminado con cuidado, orden y ese aroma fresco a limpio.",
     g1t: "Baño renovado", g1c: "Baños", g2t: "Espacio abierto", g2c: "Áreas comunes", g3t: "Cocina", g3c: "Cocinas",
-    g4t: "Habitación", g4c: "Habitaciones", g5t: "Sala y cocina", g5c: "Casa completa",
+    g4t: "Habitación", g4c: "Habitaciones", g5t: "Comedor", g5c: "Área de comedor",
     baKicker: "Los detalles", baTitle: "Se nota la diferencia",
     baText: "Líneas de aspirado parejas, superficies pulidas y cada rincón cuidado. Cada trabajo termina con una revisión final para que no se escape nada.",
     dt1: "Pisos aspirados y trapeados de borde a borde", dt2: "Superficies sin polvo y limpias", dt3: "Revisión final en cada visita",
