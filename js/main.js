@@ -55,7 +55,7 @@
     g1t: "Baño renovado", g1c: "Baños", g2t: "Comedor", g2c: "Área de comedor", g3t: "Cocina", g3c: "Cocinas",
     g4t: "Habitación", g4c: "Habitaciones", g5t: "Espacio abierto", g5c: "Áreas comunes",
     baKicker: "Los detalles", baTitle: "Se nota la diferencia",
-    baText: "Líneas de aspirado parejas, superficies pulidas y cada rincón cuidado. Cada trabajo termina con una revisión final para que no se escape nada.",
+    baText: "Líneas de aspirado parejas, superficies pulidas y cada rincón cuidado. Cuidamos cada detalle para que te sientas consentido en tu propia casa.",
     dt1: "Pisos aspirados y trapeados de borde a borde", dt2: "Superficies sin polvo y limpias", dt3: "Revisión final en cada visita",
     shotTag: "Aspirado impecable", baIg: "Más en Instagram",
     arKicker: "Zona de servicio", arTitle: "Con orgullo servimos al <em>Área de Tampa</em>",
