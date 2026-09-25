@@ -12,7 +12,7 @@ service cloud.firestore {
         && request.resource.data.text.size() >= 10 && request.resource.data.text.size() <= 800
         && request.resource.data.rating is int
         && request.resource.data.rating >= 1 && request.resource.data.rating <= 5
-        && request.resource.data.service is string && request.resource.data.service.size() <= 60
+        && request.resource.data['service'] is string && request.resource.data['service'].size() <= 60
         && request.resource.data.createdAt == request.time;
       allow update, delete: if false;
     }
