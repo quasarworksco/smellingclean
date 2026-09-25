@@ -247,8 +247,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .about-badge strong { display: block; font-family: var(--font-head); font-size: 1.02rem; font-weight: 800; color: var(--ink); line-height: 1.2; }
 .about-badge small { font-size: 0.8rem; color: var(--muted); font-weight: 500; }
 .about-copy .lead { margin-top: 18px; }
-#nosotros .kicker { font-size: 0.9rem; }
-#nosotros .lead { font-size: clamp(1.08rem, 1.5vw, 1.22rem); line-height: 1.7; }
+.kicker { font-size: 0.9rem; }
+.lead { font-size: clamp(1.08rem, 1.5vw, 1.22rem); line-height: 1.7; }
 #nosotros .feature h3 { font-size: 1.12rem; }
 #nosotros .feature p { font-size: 1rem; line-height: 1.6; }
 #nosotros .about-badge strong { font-size: 1.1rem; }
@@ -536,7 +536,7 @@ a.c-card:hover .c-arrow { color: var(--ink); transform: translateX(3px); }
   .about-badge { left: 16px; right: 16px; }
   .feature-grid { grid-template-columns: minmax(0, 1fr); }
   .feature { display: grid; grid-template-columns: auto 1fr; column-gap: 16px; padding: 18px; }
-  #nosotros .lead { font-size: 1.08rem; }
+  .lead { font-size: 1.08rem; }
   #nosotros .feature p { font-size: 0.98rem; }
   .feature-icon { grid-row: span 2; margin-bottom: 0; }
 
