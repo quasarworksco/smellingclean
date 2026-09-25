@@ -52,7 +52,7 @@
     p4t: "Disfruta la frescura", p4d: "Llega a un espacio impecable que de verdad huele a limpio.",
     pfKicker: "Portafolio", pfTitle: "Resultados que <em>hablan por sí solos</em>",
     pfLead: "Hogares reales, limpiados por nuestro equipo. Cada espacio terminado con cuidado, orden y ese aroma fresco a limpio.",
-    g1t: "Baño renovado", g1c: "Baños", g2t: "Espacio abierto", g2c: "Áreas comunes", g3t: "Cuidado de alfombras", g3c: "Pisos",
+    g1t: "Baño renovado", g1c: "Baños", g2t: "Espacio abierto", g2c: "Áreas comunes", g3t: "Comedor", g3c: "Área de comedor",
     g4t: "Habitación", g4c: "Habitaciones", g5t: "Sala y cocina", g5c: "Casa completa",
     baKicker: "Los detalles", baTitle: "Se nota la diferencia",
     baText: "Líneas de aspirado parejas, superficies pulidas y cada rincón cuidado. Cada trabajo termina con una revisión final para que no se escape nada.",
