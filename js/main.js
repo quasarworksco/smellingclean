@@ -46,7 +46,7 @@
     r1: "Camas tendidas (cambio de sábanas a solicitud)", r2: "Muebles y repisas sin polvo", r3: "Espejos y vidrios limpios", r4: "Interruptores y manijas desinfectados", r5: "Ventiladores de techo sin polvo", r6: "Alfombras aspiradas, pisos trapeados",
     l1: "Superficies y decoración sin polvo", l2: "Tapicería aspirada", l3: "Zócalos limpios", l4: "Puertas de vidrio y pantallas limpias", l5: "Cojines acomodados", l6: "Pisos aspirados y trapeados",
     prKicker: "Cómo funciona", prTitle: "Un espacio limpio en <em>cuatro pasos</em>",
-    p1t: "Contáctanos", p1d: "Llama, escríbenos por WhatsApp o llena el formulario. Respondemos rápido.",
+    p1t: "Contáctanos", p1d: "Llámanos, envíanos un mensaje de texto o llena el formulario. Respondemos rápido.",
     p2t: "Recibe tu cotización", p2d: "Cuéntanos sobre tu espacio y te enviamos un presupuesto claro y sin compromiso.",
     p3t: "Elige la fecha", p3d: "Escoge el día y la frecuencia que mejor te funcionen.",
     p4t: "Disfruta la frescura", p4d: "Llega a un espacio impecable que de verdad huele a limpio.",
