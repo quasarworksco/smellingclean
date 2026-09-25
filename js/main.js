@@ -22,7 +22,7 @@
     f1t: "Atención al detalle", f1d: "Zócalos, manijas, esquinas e interruptores: los detalles hacen la diferencia.",
     f2t: "A tu horario", f2d: "Visitas únicas, semanales, quincenales o mensuales que se adaptan a tu rutina.",
     f3t: "Trato personal", f3d: "Hablas directamente con nosotros. Comunicación clara desde la cotización hasta la revisión final.",
-    f4t: "Productos incluidos", f4d: "Llevamos nuestros propios productos y equipo. No necesitas preparar nada.",
+    f4t: "Productos incluidos", f4d: "Llevamos nuestros propios productos y equipo, y nos adaptamos a tus preferencias si deseas que usemos productos específicos.",
     svcKicker: "Nuestros servicios",
     svcTitle: "Soluciones de limpieza para <em>cada espacio</em>",
     svcLead: "Desde tu sala hasta tu oficina, ofrecemos servicios pensados en lo que realmente necesitas.",
