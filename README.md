@@ -1,6 +1,6 @@
 # Smelling Clean — Professional Cleaning Services
 
-Static website for Smelling Clean (Riverview, FL): residential and commercial cleaning.
+Static website for Smelling Clean (Tampa Area, FL): residential and commercial cleaning.
 
 ## Structure
 - `index.html` — single-page site: Home, Services, Portfolio, Contact (plus About, Process, Service Area and FAQ)
