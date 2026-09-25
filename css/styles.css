@@ -1,19 +1,20 @@
 /* =========================================================
    Smelling Clean — Professional Cleaning Services
-   Brand: #93e3fd (sky) · #cbf0ff (ice) · #3dffb1 (mint)
+   Brand: #93e3fd (sky) · #cbf0ff (ice) · #a8efd0 (pastel mint)
    ========================================================= */
 
 :root {
   --sky: #93e3fd;
   --ice: #cbf0ff;
-  --mint: #3dffb1;
+  --mint: #a8efd0;
+  --mint-hover: #bff5de;
 
   --ink: #0b2a3c;          /* primary / headings */
   --ink-hover: #133f58;
   --text: #3d5566;         /* body copy */
   --muted: #6d8494;
   --accent: #0e7490;       /* readable brand teal for text & links */
-  --success: #0f9f6e;
+  --success: #2a9d74;
 
   --bg: #ffffff;
   --bg-soft: #f5fafc;
@@ -91,8 +92,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .btn:hover .icon:last-child { transform: translateX(3px); }
 .btn-primary { color: #fff; background: var(--ink); box-shadow: 0 8px 20px -10px rgba(11, 42, 60, 0.6); }
 .btn-primary:hover { background: var(--ink-hover); transform: translateY(-1px); }
-.btn-accent { color: var(--ink); background: var(--mint); box-shadow: 0 10px 24px -12px rgba(61, 255, 177, 0.8); }
-.btn-accent:hover { background: #6effc6; transform: translateY(-1px); }
+.btn-accent { color: var(--ink); background: var(--mint); box-shadow: 0 10px 24px -12px rgba(120, 214, 176, 0.7); }
+.btn-accent:hover { background: var(--mint-hover); transform: translateY(-1px); }
 .btn-glass { color: var(--ink); background: #fff; border-color: var(--line-strong); }
 .btn-glass:hover { border-color: var(--ink); transform: translateY(-1px); }
 .btn-outline-light { color: #fff; background: rgba(255, 255, 255, 0.08); border-color: rgba(255, 255, 255, 0.45); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
@@ -153,7 +154,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 }
 .lang-toggle:hover { background: rgba(255, 255, 255, 0.12); }
 .header .btn-primary { background: var(--mint); color: var(--ink); box-shadow: none; }
-.header .btn-primary:hover { background: #6effc6; }
+.header .btn-primary:hover { background: var(--mint-hover); }
 .header.scrolled .lang-toggle, .menu-open .header .lang-toggle { color: var(--ink); border-color: var(--line-strong); }
 .header.scrolled .lang-toggle:hover { background: var(--bg-soft); }
 .menu-toggle { display: none; width: 44px; height: 44px; border-radius: 10px; align-items: center; justify-content: center; color: #fff; border: 1px solid rgba(255, 255, 255, 0.3); }
@@ -203,7 +204,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
   background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.22);
   -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px);
 }
-.eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 4px rgba(61, 255, 177, 0.22); flex-shrink: 0; }
+.eyebrow .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--mint); box-shadow: 0 0 0 4px rgba(168, 239, 208, 0.4); flex-shrink: 0; }
 .hero-title { color: #fff; font-weight: 800; font-size: clamp(2.5rem, 6vw, 4.6rem); line-height: 1.04; letter-spacing: -0.035em; }
 .hero-title em { color: var(--sky); }
 .hero-sub { margin-top: 22px; font-size: clamp(1.02rem, 1.4vw, 1.18rem); line-height: 1.7; max-width: 560px; color: rgba(255, 255, 255, 0.84); }
@@ -267,7 +268,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .service-card > p { font-size: 0.95rem; }
 .ticks { margin: 18px 0 22px; display: grid; gap: 10px; }
 .ticks li { display: flex; align-items: flex-start; gap: 10px; font-size: 0.93rem; font-weight: 500; color: var(--ink); }
-.ticks .icon { width: 16px; height: 16px; margin-top: 3px; padding: 3px; border-radius: 50%; background: rgba(61, 255, 177, 0.22); color: var(--success); stroke-width: 3; box-sizing: content-box; }
+.ticks .icon { width: 16px; height: 16px; margin-top: 3px; padding: 3px; border-radius: 50%; background: rgba(168, 239, 208, 0.6); color: var(--success); stroke-width: 3; box-sizing: content-box; }
 .service-link { margin-top: auto; display: inline-flex; align-items: center; gap: 8px; font-family: var(--font-head); font-weight: 700; font-size: 0.92rem; color: var(--accent); padding-top: 18px; border-top: 1px solid var(--line); }
 .service-link .icon { transition: transform .25s var(--ease); }
 .service-link:hover { color: var(--ink); }
@@ -375,7 +376,7 @@ a.c-card:hover { border-color: var(--line-strong); box-shadow: var(--shadow); }
 .c-card small { display: block; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
 .c-card strong { display: block; font-family: var(--font-head); color: var(--ink); font-size: 1rem; font-weight: 700; }
 .c-icon { width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center; flex-shrink: 0; color: var(--ink); background: var(--ice); }
-.c-icon.wa { background: rgba(61, 255, 177, 0.3); color: #047857; }
+.c-icon.wa { background: rgba(168, 239, 208, 0.7); color: #1f7a5c; }
 .c-arrow { color: var(--muted); transition: transform .25s var(--ease), color .25s; }
 a.c-card:hover .c-arrow { color: var(--ink); transform: translateX(3px); }
 .socials { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
@@ -435,7 +436,7 @@ a.c-card:hover .c-arrow { color: var(--ink); transform: translateX(3px); }
   transform: translateY(120px); opacity: 0;
 }
 .fab-wa.show { transform: none; opacity: 1; }
-.fab-wa:hover { background: #6effc6; }
+.fab-wa:hover { background: var(--mint-hover); }
 .fab-wa .icon { width: 24px; height: 24px; }
 
 /* ---------- Reveal ---------- */
