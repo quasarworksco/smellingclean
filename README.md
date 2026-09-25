@@ -26,7 +26,5 @@ No backend needed: the form composes the message and opens WhatsApp (+1 813 808 
 ## Run locally
 Open `index.html` in a browser, or serve the folder with any static server (GitHub Pages, Netlify, Vercel).
 
-## Customer reviews (Firebase Firestore)
-- `js/reviews.js` loads and saves reviews in the Firestore collection `reviews` (project `smellingclean-5b950`).
-- Reviews are published immediately. To remove one: Firebase console → Firestore Database → `reviews` → delete the document.
-- Security rules are in `firestore.rules`. Publish them once in Firebase console → Firestore Database → Rules (paste the file and click Publish).
+## Customer reviews
+- Static reviews in the `#resenas` section of `index.html` (section is hidden until reviews are added).
