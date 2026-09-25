@@ -47,7 +47,7 @@
     l1: "Superficies y decoración sin polvo", l2: "Tapicería aspirada", l3: "Zócalos limpios", l4: "Puertas de vidrio y pantallas limpias", l5: "Cojines acomodados", l6: "Pisos aspirados y trapeados",
     prKicker: "Cómo funciona", prTitle: "Un espacio limpio en <em>cuatro pasos</em>",
     p1t: "Contáctanos", p1d: "Llámanos, envíanos un mensaje de texto o llena el formulario. Respondemos rápido.",
-    p2t: "Visita y presupuesto", p2d: "Visitamos tu espacio en persona y te damos un presupuesto claro.",
+    p2t: "Recibe tu cotización", p2d: "Visitamos tu espacio en persona y te damos un presupuesto claro.",
     p3t: "Elige la fecha", p3d: "Escoge el día y la frecuencia que mejor te funcionen.",
     p4t: "Disfruta la frescura", p4d: "Llega a un espacio impecable que de verdad huele a limpio.",
     pfKicker: "Portafolio", pfTitle: "Resultados que <em>hablan por sí solos</em>",
