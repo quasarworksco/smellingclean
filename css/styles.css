@@ -240,7 +240,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .about-img img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .about-badge {
   position: absolute; right: -16px; bottom: 0; display: flex; align-items: center; gap: 14px; padding: 14px 20px 14px 14px; border-radius: var(--radius);
-  background: var(--ice); border: 1px solid #b4e7fb; box-shadow: var(--shadow-lg);
+  background: var(--ice-soft); border: 1px solid #d6f1fc; box-shadow: var(--shadow-lg);
 }
 .about-badge img { border-radius: 10px; }
 .about-badge strong { display: block; font-family: var(--font-head); font-size: 1.02rem; font-weight: 800; color: var(--ink); line-height: 1.2; }
