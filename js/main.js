@@ -4,7 +4,6 @@
   var doc = document.documentElement;
   var body = document.body;
   var PHONE = "18138087772";
-  var EMAIL = "smellingcleanflorida@gmail.com";
 
   /* ---------------- i18n (EN default / ES) ---------------- */
   var ES = {
@@ -16,7 +15,7 @@
     hbCall: "Llama o escribe", hbArea: "Zona de servicio", hbAreaV: "Área de Tampa, FL", hbSched: "Horarios", hbSchedV: "Única vez o recurrente",
     heroSub: "Limpieza profesional para hogares y negocios, hecha con cuidado, detalle y un acabado que se ve — y se huele — desde que entras.",
     mq1: "Limpieza Estándar", mq2: "Limpieza Profunda", mq3: "Mudanzas", mq4: "Limpieza Comercial", mq5: "Limpieza de Airbnb", mq6: "Post-Construcción",
-    aboutOwner: "Tu persona de contacto",
+    aboutOwner: "Negocio local · Área de Tampa",
     aboutKicker: "Nosotros",
     aboutTitle: "La limpieza es nuestro oficio. <em>Tu tranquilidad</em> es la meta.",
     aboutLead: "Smelling Clean es una empresa local de limpieza en el Área de Tampa, Florida. Cuidamos hogares y espacios comerciales con una promesa sencilla: dejar cada lugar impecable, fresco y listo para disfrutar.",
@@ -73,12 +72,12 @@
     ctLead: "Cuéntanos qué necesitas y te responderemos con una cotización personalizada.",
     mapOpen: "Abrir en Google Maps",
     cPhone: "Teléfono", cEmail: "Correo", cLocation: "Ubicación",
-    formTitle: "Solicita tu cotización gratis", formSub: "Persona de contacto: Tatiana Fuentes",
+    formTitle: "Solicita tu cotización gratis", formSub: "Sin compromiso · Cotización gratis",
     lName: "Nombre completo", lPhone: "Teléfono", lEmail: "Correo", lService: "Servicio", lMsg: "Cuéntanos sobre tu espacio",
     phName: "Tu nombre", phEmail: "tu@correo.com", phMsg: "Tamaño, número de habitaciones, fecha preferida...",
     optOther: "Otro",
     formError: "Por favor ingresa tu nombre y teléfono.",
-    sendWa: "Enviar por WhatsApp", sendEmail: "Enviar por correo",
+    sendWa: "Enviar por WhatsApp", sendSms: "Enviar por SMS",
     footAbout: "Limpieza residencial y comercial en el Área de Tampa, Florida. Espacios frescos e impecables, en cada visita.",
     footNav: "Navegación", rights: "Todos los derechos reservados.", backTop: "Volver arriba",
     fab: "¿Necesitas cotización?"
@@ -250,9 +249,9 @@
       if (form.elements.message.value.trim()) lines.push("", form.elements.message.value.trim());
       var text = lines.join("\n");
 
-      if (sendMode === "email") {
-        var subject = (es ? "Solicitud de cotización - " : "Quote request - ") + serviceLabel;
-        window.location.href = "mailto:" + EMAIL + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(text);
+      if (sendMode === "sms") {
+        // "?&body=" works on both iOS and Android messaging apps
+        window.location.href = "sms:+" + PHONE + "?&body=" + encodeURIComponent(text);
       } else {
         window.open("https://wa.me/" + PHONE + "?text=" + encodeURIComponent(text), "_blank", "noopener");
       }
