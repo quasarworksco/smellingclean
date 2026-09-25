@@ -217,7 +217,7 @@
   var form = document.getElementById("contactForm");
   var formError = document.getElementById("formError");
   if (form) {
-    var sendMode = "whatsapp";
+    var sendMode = "sms";
     form.querySelectorAll("[data-send]").forEach(function (b) {
       b.addEventListener("click", function () { sendMode = b.getAttribute("data-send"); });
     });
