@@ -6,7 +6,7 @@ Static website for Smelling Clean (Tampa Area, FL): residential and commercial c
 - `index.html` — single-page site: Home, Services, Portfolio, Contact (plus About, Process, Service Area and FAQ)
 - `css/styles.css` — brand styles (#93e3fd, #cbf0ff, #3dffb1), glassmorphism, responsive layout
 - `js/main.js` — EN/ES language toggle, mobile menu, scroll animations, contact form
-- `assets/logo.png` / `assets/logo-white.png` — official logo (transparent, for light / dark backgrounds); original in `assets/logo-original.jpg`
+- `assets/logo.png` / `assets/logo-white.png` — official logo (transparent, for light / dark backgrounds); original in `assets/logo-original.png`
 - `assets/portfolio/` — real job photos (JPG originals + optimized WebP)
 
 ## SEO & sharing
