@@ -379,7 +379,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .gr-cta { white-space: nowrap; }
 
 .gr-carousel { position: relative; }
-.gr-track { display: flex; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 4px 2px 18px; scrollbar-width: none; overscroll-behavior-x: contain; }
+.gr-track { display: flex; align-items: flex-start; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 4px 2px 18px; scrollbar-width: none; overscroll-behavior-x: contain; }
 .gr-track::-webkit-scrollbar { display: none; }
 .gr-track:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 12px; }
 .gr-card { flex: 0 0 calc((100% - 36px) / 3); scroll-snap-align: start; display: flex; flex-direction: column; padding: 20px; border-radius: 12px; background: #fff; border: 1px solid #dadce0; box-shadow: 0 1px 2px rgba(60, 64, 67, 0.12), 0 1px 3px 1px rgba(60, 64, 67, 0.08); font-family: Roboto, Arial, var(--font-body); min-width: 0; }
@@ -395,7 +395,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .gr-head .g-logo { align-self: flex-start; }
 .gr-rate { display: flex; align-items: center; gap: 10px; margin-top: 14px; }
 .gr-date { font-size: 0.84rem; color: #70757a; }
-.gr-text { margin-top: 10px; font-size: 0.95rem; line-height: 1.55; color: #202124; display: -webkit-box; -webkit-line-clamp: 7; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
+.gr-text { margin-top: 10px; font-size: 0.95rem; line-height: 1.55; color: #202124; display: -webkit-box; -webkit-line-clamp: 12; -webkit-box-orient: vertical; overflow: hidden; overflow-wrap: anywhere; }
 .gr-card.is-open .gr-text { display: block; -webkit-line-clamp: unset; }
 .gr-more { align-self: flex-start; margin-top: 8px; padding: 0; font-size: 0.9rem; font-weight: 500; color: #1a73e8; }
 .gr-more:hover { text-decoration: underline; }
