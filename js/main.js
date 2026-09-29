@@ -69,6 +69,9 @@
     q4: "¿Limpian oficinas y negocios?", a4: "Sí. Ofrecemos limpieza comercial y podemos trabajar según el horario de tu negocio.",
     q5: "¿Cómo reservo?", a5: "Llámanos o escríbenos al (813) 808-7772, contáctanos por WhatsApp o usa el formulario de esta página.",
     rvKicker: "Reseñas", rvTitle: "Lo que dicen <em>nuestros clientes</em>",
+    rvExcellent: "Excelente", rvOnGoogle: "Reseñas de nuestros clientes en Google", rvSeeAll: "Ver todas las reseñas en Google",
+    rvLG: "Local Guide", rvRevs: "reseñas", rvRev1: "reseña", rvMore: "Leer más", rvLess: "Leer menos",
+    rd1m: "hace un mes", rd3m: "hace 3 meses", rd5m: "hace 5 meses", rd1y: "hace un año", rd2y: "hace 2 años",
     ctKicker: "Contacto", ctTitle: "Hagamos que tu espacio <em>brille</em>",
     ctLead: "Cuéntanos qué necesitas y agendaremos una visita para darte una cotización personalizada.",
     mapOpen: "Abrir en Google Maps",
@@ -205,6 +208,64 @@
       panels.forEach(function (p) { p.classList.toggle("active", p.getAttribute("data-panel") === name); });
     });
   });
+
+  /* ---------------- About slider (every 5s + dots) ---------------- */
+  var slider = document.getElementById("aboutSlider");
+  if (slider) {
+    var slides = slider.querySelectorAll(".about-slide");
+    var dots = slider.querySelectorAll(".about-dot");
+    var current = 0, timer = null;
+    var show = function (i) {
+      current = (i + slides.length) % slides.length;
+      slides.forEach(function (sl, k) { sl.classList.toggle("is-active", k === current); });
+      dots.forEach(function (d, k) { d.classList.toggle("is-active", k === current); d.setAttribute("aria-selected", k === current ? "true" : "false"); });
+    };
+    var start = function () { stop(); timer = setInterval(function () { show(current + 1); }, 5000); };
+    var stop = function () { if (timer) clearInterval(timer); timer = null; };
+    dots.forEach(function (d, k) { d.addEventListener("click", function () { show(k); start(); }); });
+    slider.addEventListener("mouseenter", stop);
+    slider.addEventListener("mouseleave", start);
+    start();
+  }
+
+  /* ---------------- Google reviews carousel ---------------- */
+  var track = document.getElementById("grTrack");
+  if (track) {
+    var prev = document.querySelector(".gr-prev"), next = document.querySelector(".gr-next");
+    var step = function () { var c = track.querySelector(".gr-card"); return c ? c.getBoundingClientRect().width + 18 : 300; };
+    var updateNav = function () {
+      var max = track.scrollWidth - track.clientWidth - 2;
+      if (prev) prev.disabled = track.scrollLeft <= 2;
+      if (next) next.disabled = track.scrollLeft >= max;
+    };
+    if (prev) prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: "smooth" }); });
+    if (next) next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: "smooth" }); });
+    track.addEventListener("scroll", updateNav, { passive: true });
+    window.addEventListener("resize", updateNav);
+
+    var setMoreLabel = function (btn, open) {
+      var span = btn.querySelector("span");
+      var key = open ? "rvLess" : "rvMore";
+      span.setAttribute("data-i18n", key);
+      span.textContent = lang === "es" ? ES[key] : (open ? "Read less" : "Read more");
+    };
+    var checkMore = function () {
+      track.querySelectorAll(".gr-card").forEach(function (card) {
+        var text = card.querySelector(".gr-text"), btn = card.querySelector(".gr-more");
+        if (card.classList.contains("is-open")) { btn.hidden = false; return; }
+        btn.hidden = text.scrollHeight <= text.clientHeight + 2;
+      });
+    };
+    track.querySelectorAll(".gr-more").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var card = btn.closest(".gr-card"), open = card.classList.toggle("is-open");
+        setMoreLabel(btn, open);
+      });
+    });
+    window.addEventListener("resize", checkMore);
+    window.addEventListener("load", function () { checkMore(); updateNav(); });
+    checkMore(); updateNav();
+  }
 
   /* ---------------- Service links preselect form ---------------- */
   var serviceSelect = document.getElementById("serviceSelect");
