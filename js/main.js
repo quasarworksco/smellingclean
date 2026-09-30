@@ -70,6 +70,9 @@
     q5: "¿Cómo reservo?", a5: "Llámanos o escríbenos al (813) 808-7772, contáctanos por WhatsApp o usa el formulario de esta página.",
     rvKicker: "Reseñas", rvTitle: "Lo que dicen <em>nuestros clientes</em>",
     rvExcellent: "Excelente", rvOnGoogle: "Reseñas de nuestros clientes en Google", rvSeeAll: "Ver todas las reseñas en Google",
+    rvCtaT: "Tu opinión es muy importante para nosotros",
+    rvCtaD: "Cada reseña nos ayuda a seguir mejorando y ayuda a otras familias a encontrar un servicio de limpieza de confianza. Si ya te atendimos, nos encantaría saber cómo lo hicimos.",
+    rvCtaB: "Déjanos tu reseña",
     rvLG: "Local Guide", rvRevs: "reseñas", rvRev1: "reseña", rvMore: "Leer más", rvLess: "Leer menos",
     ctKicker: "Contacto", ctTitle: "Hagamos que tu espacio <em>brille</em>",
     ctLead: "Cuéntanos qué necesitas y agendaremos una visita para darte una cotización personalizada.",
@@ -239,8 +242,21 @@
     };
     if (prev) prev.addEventListener("click", function () { track.scrollBy({ left: -step(), behavior: "smooth" }); });
     if (next) next.addEventListener("click", function () { track.scrollBy({ left: step(), behavior: "smooth" }); });
-    track.addEventListener("scroll", updateNav, { passive: true });
-    window.addEventListener("resize", updateNav);
+    // Fit the track height to the cards currently in view (no empty gap from taller off-screen cards)
+    var fitRaf = 0;
+    var fitHeight = function () {
+      cancelAnimationFrame(fitRaf);
+      fitRaf = requestAnimationFrame(function () {
+        var tr = track.getBoundingClientRect(), h = 0;
+        track.querySelectorAll(".gr-card").forEach(function (card) {
+          var r = card.getBoundingClientRect();
+          if (r.right > tr.left + 8 && r.left < tr.right - 8) h = Math.max(h, card.offsetHeight);
+        });
+        if (h) track.style.height = (h + 22) + "px";
+      });
+    };
+    track.addEventListener("scroll", function () { updateNav(); fitHeight(); }, { passive: true });
+    window.addEventListener("resize", function () { updateNav(); fitHeight(); });
 
     var setMoreLabel = function (btn, open) {
       var span = btn.querySelector("span");
@@ -259,11 +275,12 @@
       btn.addEventListener("click", function () {
         var card = btn.closest(".gr-card"), open = card.classList.toggle("is-open");
         setMoreLabel(btn, open);
+        fitHeight();
       });
     });
     window.addEventListener("resize", checkMore);
-    window.addEventListener("load", function () { checkMore(); updateNav(); });
-    checkMore(); updateNav();
+    window.addEventListener("load", function () { checkMore(); updateNav(); fitHeight(); });
+    checkMore(); updateNav(); fitHeight();
   }
 
   /* ---------------- Service links preselect form ---------------- */
