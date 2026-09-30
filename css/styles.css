@@ -162,7 +162,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .section-tint { background: var(--ice-soft); border-block: 1px solid #d6f1fc; }
 #resenas { padding-bottom: clamp(40px, 5vw, 64px); }
 #zona { background: linear-gradient(180deg, var(--ice-soft) 0%, var(--ice) 100%); border-top: 1px solid #d6f1fc; }
-#faq { background: linear-gradient(180deg, var(--ice) 0%, var(--ice-soft) 100%); border-block: 0; border-bottom: 1px solid #d6f1fc; }
+#zona { border-bottom: 1px solid #d6f1fc; }
+#faq { background: #fff; }
 .section-head { max-width: 720px; margin-bottom: clamp(40px, 5vw, 56px); }
 .section-head.center { margin-inline: auto; text-align: center; }
 .section-head.split { max-width: none; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
@@ -484,7 +485,7 @@ a.c-card:hover .c-arrow { color: var(--ink); transform: translateX(3px); }
 .form-actions .btn { white-space: normal; text-align: center; }
 
 /* Contact: more contrast & color */
-.contact { overflow: hidden; }
+.contact { overflow: hidden; background: var(--ice-soft); border-top: 1px solid #d6f1fc; }
 .contact::before, .contact::after { content: ""; position: absolute; border-radius: 50%; filter: blur(60px); pointer-events: none; z-index: 0; }
 .contact::before { width: 520px; height: 520px; right: -140px; top: 22%; background: rgba(147, 227, 253, 0.55); animation: ctFloat 14s ease-in-out infinite alternate; }
 .contact::after { width: 420px; height: 420px; left: -160px; bottom: -80px; background: rgba(168, 239, 208, 0.55); animation: ctFloat 16s ease-in-out infinite alternate-reverse; }
