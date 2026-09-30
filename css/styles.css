@@ -388,7 +388,7 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .gr-carousel { position: relative; }
 .gr-track { display: flex; align-items: flex-start; transition: height .35s ease; gap: 18px; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; padding: 4px 2px 18px; scrollbar-width: none; overscroll-behavior-x: contain; }
 .gr-track::-webkit-scrollbar { display: none; }
-.rv-cta { display: flex; align-items: center; gap: 20px 28px; margin-top: 28px; padding: 28px 32px; border-radius: var(--radius-lg); background: linear-gradient(120deg, #eaf8fe 0%, var(--ice) 55%, rgba(168, 239, 208, 0.55) 100%); border: 1px solid rgba(147, 227, 253, 0.7); box-shadow: var(--shadow-sm); }
+.rv-cta { display: flex; align-items: center; gap: 20px 28px; margin-top: 28px; padding: 28px 32px; border-radius: var(--radius-lg); background: linear-gradient(120deg, #eaf8fe 0%, var(--ice) 100%); border: 1px solid rgba(147, 227, 253, 0.7); box-shadow: var(--shadow-sm); }
 .rv-cta-icon { flex: none; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 16px; background: rgba(255, 255, 255, 0.75); border: 1px solid rgba(255, 255, 255, 0.9); color: var(--accent); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
 .rv-cta-icon .icon { width: 26px; height: 26px; }
 .rv-cta-text { flex: 1; min-width: 0; }
