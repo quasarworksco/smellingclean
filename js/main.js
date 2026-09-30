@@ -71,7 +71,6 @@
     rvKicker: "Reseñas", rvTitle: "Lo que dicen <em>nuestros clientes</em>",
     rvExcellent: "Excelente", rvOnGoogle: "Reseñas de nuestros clientes en Google", rvSeeAll: "Ver todas las reseñas en Google",
     rvLG: "Local Guide", rvRevs: "reseñas", rvRev1: "reseña", rvMore: "Leer más", rvLess: "Leer menos",
-    rd1m: "hace un mes", rd3m: "hace 3 meses", rd5m: "hace 5 meses", rd1y: "hace un año", rd2y: "hace 2 años",
     ctKicker: "Contacto", ctTitle: "Hagamos que tu espacio <em>brille</em>",
     ctLead: "Cuéntanos qué necesitas y agendaremos una visita para darte una cotización personalizada.",
     mapOpen: "Abrir en Google Maps",
