@@ -162,7 +162,8 @@ ul, ol { margin: 0; padding: 0; list-style: none; }
 .section-tint { background: var(--ice-soft); border-block: 1px solid #d6f1fc; }
 #resenas { padding-bottom: clamp(40px, 5vw, 64px); }
 #zona { background: linear-gradient(180deg, var(--ice-soft) 0%, var(--ice) 100%); border-top: 1px solid #d6f1fc; }
-#faq { background: linear-gradient(180deg, var(--ice) 0%, var(--ice-soft) 100%); border-block: 0; border-bottom: 1px solid #d6f1fc; }
+#zona { border-bottom: 1px solid #d6f1fc; }
+#faq { background: #fff; }
 .section-head { max-width: 720px; margin-bottom: clamp(40px, 5vw, 56px); }
 .section-head.center { margin-inline: auto; text-align: center; }
 .section-head.split { max-width: none; display: flex; align-items: flex-end; justify-content: space-between; gap: 24px; flex-wrap: wrap; }
@@ -484,7 +485,7 @@ a.c-card:hover .c-arrow { color: var(--ink); transform: translateX(3px); }
 .form-actions .btn { white-space: normal; text-align: center; }
 
 /* Contact: more contrast & color */
-.contact { overflow: hidden; }
+.contact { overflow: hidden; background: var(--ice-soft); border-top: 1px solid #d6f1fc; }
 .contact::before, .contact::after { content: ""; position: absolute; border-radius: 50%; filter: blur(60px); pointer-events: none; z-index: 0; }
 .contact::before { width: 520px; height: 520px; right: -140px; top: 22%; background: rgba(147, 227, 253, 0.55); animation: ctFloat 14s ease-in-out infinite alternate; }
 .contact::after { width: 420px; height: 420px; left: -160px; bottom: -80px; background: rgba(168, 239, 208, 0.55); animation: ctFloat 16s ease-in-out infinite alternate-reverse; }
@@ -494,17 +495,17 @@ a.c-card:hover .c-arrow { color: var(--ink); transform: translateX(3px); }
 .c-card { background: rgba(255, 255, 255, 0.85); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); transition: border-color .25s, box-shadow .25s, transform .25s var(--ease); }
 a.c-card:hover { transform: translateY(-2px); }
 .c-icon.ph { background: var(--ink); color: var(--mint); }
-.c-icon.wa { background: #25d366; color: #fff; box-shadow: 0 8px 18px -8px rgba(37, 211, 102, 0.8); }
+.c-icon.wa { background: #93e3fd; color: var(--ink); box-shadow: 0 8px 18px -8px rgba(147, 227, 253, 0.9); }
 .c-icon.ml { background: var(--ice); color: var(--accent); }
 .c-icon.lc { background: var(--mint); color: var(--ink); }
-.c-card-wa { border-color: rgba(37, 211, 102, 0.45); }
-.c-card-wa:hover { border-color: #25d366 !important; }
+.c-card-wa { border-color: #93e3fd; }
+.c-card-wa:hover { border-color: #5fd0f5 !important; }
 .social { background: rgba(255, 255, 255, 0.85); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); }
 
 @property --ct-ang { syntax: "<angle>"; initial-value: 0deg; inherits: false; }
 .contact-form { --fp: clamp(24px, 4vw, 36px); position: relative; padding: var(--fp); border: 0; background: #fff; box-shadow: 0 30px 70px -30px rgba(14, 116, 144, 0.45), 0 10px 24px -14px rgba(11, 42, 60, 0.25); isolation: isolate; }
 .contact-form::before { content: ""; position: absolute; inset: 0; padding: 2px; border-radius: inherit; pointer-events: none; z-index: 2;
-  background: conic-gradient(from var(--ct-ang), #93e3fd, #a8efd0, #0e7490, #25d366, #93e3fd);
+  background: conic-gradient(from var(--ct-ang), #93e3fd, #cbf0ff, #0e7490, #a8efd0, #93e3fd);
   -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0); -webkit-mask-composite: xor;
   mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
   animation: ctSpin 7s linear infinite; }
@@ -517,8 +518,8 @@ a.c-card:hover { transform: translateY(-2px); }
 .form-badge .icon { width: 14px; height: 14px; }
 .field input, .field select, .field textarea { background-color: #f7fcfe; }
 .field input:focus, .field select:focus, .field textarea:focus { background-color: #fff; }
-.btn-wa { color: #fff; background: #25d366; box-shadow: 0 10px 24px -12px rgba(37, 211, 102, 0.9); }
-.btn-wa:hover { background: #1ebe5a; transform: translateY(-1px); }
+.btn-wa { color: var(--ink); background: #93e3fd; box-shadow: 0 10px 24px -12px rgba(14, 116, 144, 0.55); }
+.btn-wa:hover { background: #7dd9f7; transform: translateY(-1px); }
 
 /* ---------- Footer ---------- */
 .footer { color: rgba(255, 255, 255, 0.7); background: var(--ink); padding: clamp(56px, 8vw, 80px) 0 28px; }
