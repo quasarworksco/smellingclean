@@ -73,6 +73,7 @@
     rvCtaT: "Tu opinión es muy importante para nosotros",
     rvCtaD: "Cada reseña nos ayuda a seguir mejorando y ayuda a otras familias a encontrar un servicio de limpieza de confianza. Si ya te atendimos, nos encantaría saber cómo lo hicimos.",
     rvCtaB: "Déjanos tu reseña",
+    formBadge: "Cotización gratis",
     rvLG: "Local Guide", rvRevs: "reseñas", rvRev1: "reseña", rvMore: "Leer más", rvLess: "Leer menos",
     ctKicker: "Contacto", ctTitle: "Hagamos que tu espacio <em>brille</em>",
     ctLead: "Cuéntanos qué necesitas y agendaremos una visita para darte una cotización personalizada.",
