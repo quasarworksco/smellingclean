@@ -482,11 +482,7 @@ a.c-card:hover .c-arrow { color: var(--ink); transform: translateX(3px); }
 
 /* Contact: more contrast & color */
 .contact { overflow: hidden; background: var(--ice-soft); border-top: 1px solid #d6f1fc; }
-.contact::before, .contact::after { content: ""; position: absolute; border-radius: 50%; filter: blur(60px); pointer-events: none; z-index: 0; }
-.contact::before { width: 520px; height: 520px; right: -140px; top: 22%; background: rgba(147, 227, 253, 0.55); animation: ctFloat 14s ease-in-out infinite alternate; }
-.contact::after { width: 420px; height: 420px; left: -160px; bottom: -80px; background: rgba(147, 227, 253, 0.5); animation: ctFloat 16s ease-in-out infinite alternate-reverse; }
 .contact > .container { position: relative; z-index: 1; }
-@keyframes ctFloat { from { transform: translate(0, 0) scale(1); } to { transform: translate(-40px, 30px) scale(1.12); } }
 
 .c-card { background: rgba(255, 255, 255, 0.85); -webkit-backdrop-filter: blur(10px); backdrop-filter: blur(10px); transition: border-color .25s, box-shadow .25s, transform .25s var(--ease); }
 a.c-card:hover { transform: translateY(-2px); }
