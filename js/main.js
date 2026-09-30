@@ -11,7 +11,7 @@
     navHome: "Inicio", navServices: "Servicios", navPortfolio: "Portafolio", navContact: "Contacto",
     ctaQuote: "Cotización gratis", ctaQuoteLong: "Solicitar cotización gratis", ctaWhatsapp: "Escríbenos por WhatsApp",
     heroEyebrow: "Servicios de Limpieza Residencial y Comercial",
-    heroTitle: "Espacios que se sienten nuevos y <em>huelen a limpio.</em>",
+    heroTitle: "Limpieza que se ve. Frescura que se siente. <em>Huele a limpio.</em>",
     hbCall: "Llama o escribe", hbArea: "Zona de servicio", hbAreaV: "Área de Tampa, FL", hbSched: "Horarios", hbSchedV: "Única vez o recurrente",
     heroSub: "Limpieza profesional para hogares y negocios, hecha con cuidado, detalle y un acabado que se ve — y se huele — desde que entras.",
     mq1: "Limpieza Estándar", mq2: "Limpieza Profunda", mq3: "Mudanzas", mq4: "Limpieza Comercial", mq5: "Limpieza de Airbnb", mq6: "Post-Construcción",
