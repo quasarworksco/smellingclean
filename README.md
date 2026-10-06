@@ -10,7 +10,7 @@ Static website for Smelling Clean (Tampa Area, FL): residential and commercial c
 - `assets/portfolio/` — real job photos (JPG originals + optimized WebP)
 
 ## SEO & sharing
-- Live domain: https://smellingclean.dgp-link.com/ (`CNAME` file for GitHub Pages)
+- Live domain: https://smellingcleanfl.com/ (`CNAME` file for GitHub Pages)
 - Open Graph + Twitter Card tags with `assets/og-image.png` (1200x630)
 - Schema.org `HouseCleaningService` JSON-LD (Google local results)
 - `robots.txt`, `sitemap.xml`, `site.webmanifest`, PNG icons in `assets/`
