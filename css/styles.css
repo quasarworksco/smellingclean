@@ -525,6 +525,9 @@ a.c-card:hover { transform: translateY(-2px); }
 .footer-social a { width: 42px; height: 42px; border-radius: 10px; display: grid; place-items: center; color: #fff; border: 1px solid rgba(255, 255, 255, 0.16); transition: all .25s ease; }
 .footer-social a:hover { color: var(--ink); background: var(--mint); border-color: var(--mint); }
 .footer-bottom { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 52px; padding-top: 24px; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.85rem; }
+.credit { color: rgba(255, 255, 255, 0.7); }
+.credit a { color: #fff; font-weight: 600; border-bottom: 1px solid rgba(147, 227, 253, 0.5); transition: color .2s, border-color .2s; }
+.credit a:hover { color: var(--ice); border-color: var(--ice); }
 .to-top-link { display: inline-flex; align-items: center; gap: 8px; font-weight: 600; color: #fff; }
 .to-top-link:hover { color: var(--mint); }
 

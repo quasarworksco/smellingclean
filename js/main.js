@@ -86,7 +86,7 @@
     formError: "Por favor ingresa tu nombre y teléfono.",
     sendWa: "Enviar por WhatsApp", sendSms: "Enviar por SMS",
     footAbout: "Limpieza residencial y comercial en el Área de Tampa, Florida. Espacios frescos e impecables, en cada visita.",
-    footNav: "Navegación", rights: "Todos los derechos reservados.", backTop: "Volver arriba",
+    footNav: "Navegación", rights: "Todos los derechos reservados.", designedBy: "Diseñado por", backTop: "Volver arriba",
     fab: "¿Necesitas cotización?"
   };
 
